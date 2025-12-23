@@ -2380,7 +2380,7 @@ async function processMultiExport() {
 
     // 5. Add Icons
     try {
-        const response = await fetch('/icons/icon3.png');
+        const response = await fetch('icons/icon3.png');
         if (response.ok) {
             const blob = await response.blob();
             bpFolder.file("pack_icon.png", blob);
@@ -5429,7 +5429,7 @@ document.getElementById('downloadMcaddonButton').addEventListener('click', async
 
         // Add Icon to RP
         try {
-            const response = await fetch('/icons/icon3.png');
+            const response = await fetch('icons/icon3.png');
             if (response.ok) {
                 const blob = await response.blob();
                 rpFolder.file("pack_icon.png", blob);
@@ -5439,7 +5439,7 @@ document.getElementById('downloadMcaddonButton').addEventListener('click', async
 
     // 7. Add Icon to BP
     try {
-        const response = await fetch('/icons/icon3.png');
+        const response = await fetch('icons/icon3.png');
         if (response.ok) {
             const blob = await response.blob();
             bpFolder.file("pack_icon.png", blob);
